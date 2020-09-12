@@ -1,4 +1,6 @@
 # My Web Components - "digit-clock"
+Demo: <https://wwj-github.github.io/my/>
+***
 1. `<digit-clock></digit-clock>`  
   + The simplest usage:  
   + Default format="HH:MM:SS", display hour:minute:second  
@@ -11,4 +13,4 @@
 ***
 4. `<digit-clock zone="-8"></digit-clock>`  
 ***
-Demo: <https://wwj-github.github.io/my/>
+
