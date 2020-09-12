@@ -1,12 +1,50 @@
+<!DOCTYPE html>
 <html>
-<head></head>
-  
-<body>
-  <button>asd</button>
-  <button>axsd</button>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{
+                background-color: gray;
+                /* border-collapse: collapse; */
+                /* min-height: ; */
+            }
+            digit-clock{
+                color:blue;
+                font-size:3rem;
+            }
+            input{
+                width:3rem;
+            }
+        </style>
+        <script src="clock.js"></script>
+    </head>
+    <body>        
+        <digit-clock format="HH:MM" system="12"></digit-clock>
+        <button id="sys" onclick="toggle_system()"></button><br><br>
+        <button id="fmt" onclick="toggle_format()"></button><br><br>
+        Time Zone:<br><input id="zone" type="number" onchange="change_zone()"/>
+        <!-- <script src="example.js"></script> -->
+        <script>
+            const q = document.querySelector.bind(document)
 
-<script>
-console.log(111)
-</script>
-</body>
+            const clock = q('digit-clock')
+            q('#sys').innerText = 'Time System: ' + clock.system
+            q('#fmt').innerText = 'Time Format: ' + clock.format
+            q('#zone').value = clock.default_zone;
+
+            function toggle_system(){    
+                clock.system = (clock.system === '24')? '12': '24';
+                event.target.innerText = 'Time System: ' + clock.system
+            }
+
+            function toggle_format(){
+                clock.format = (clock.format === 'HH:MM:SS')? 'HH:MM': 'HH:MM:SS'
+                event.target.innerText = 'Time Format: ' + clock.format
+            }
+
+            function change_zone(){
+                clock.zone = event.target.value
+            }
+        </script>        
+    </body>
 </html>
