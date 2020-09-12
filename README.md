@@ -1,5 +1,5 @@
 # My Web Components - "digit-clock"
-Demo: <https://wwj-github.github.io/my/>
+Demo: <https://wwj-github.github.io/My-Web-Components/>
 ***
 1. `<digit-clock></digit-clock>`  
   + The simplest usage:  
