@@ -1,4 +1,4 @@
-# My Web Components
+# My Web Components - "digit-clock"
 1. `<digit-clock></digit-clock>`  
   + The simplest usage:  
   + Default format="HH:MM:SS", display hour:minute:second  
