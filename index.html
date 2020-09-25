@@ -2,45 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <style>            
-            digit-clock{
-                color:blue;
-                font-size:3rem;
-            }
-            input{
-                width:3rem;
-            }
-        </style>
-        <script src="clock.js"></script>
     </head>
     <body>        
-        <h1>Testttt Digit Clock Demo</h1>
-        <digit-clock format="HH:MM:SS"></digit-clock>
-        <button id="sys" onclick="toggle_system()"></button><br><br>
-        <button id="fmt" onclick="toggle_format()"></button><br><br>
-        Time Zone:<br><input id="zone" type="number" onchange="change_zone()"/>
-        <!-- <script src="example.js"></script> -->
-        <script>
-            const q = document.querySelector.bind(document)
+        <script src="lib/react-16.13.1.umd.min.js"></script>
+        <script src="lib/react-dom-16.13.1.umd.min.js"></script>
+        <script src="js/ipad.js"></script>
+        <div id="app"></div>
 
-            const clock = q('digit-clock')
-            q('#sys').innerText = 'Time System: ' + clock.system
-            q('#fmt').innerText = 'Time Format: ' + clock.format
-            q('#zone').value = clock.default_zone;
-
-            function toggle_system(){    
-                clock.system = (clock.system === '24')? '12': '24';
-                event.target.innerText = 'Time System: ' + clock.system
-            }
-
-            function toggle_format(){
-                clock.format = (clock.format === 'HH:MM:SS')? 'HH:MM': 'HH:MM:SS'
-                event.target.innerText = 'Time Format: ' + clock.format
-            }
-
-            function change_zone(){
-                clock.zone = event.target.value
-            }
-        </script>        
+        <!-- <button onclick="run()">Run</button><br> -->
+        <!-- <textarea></textarea> -->
+        
     </body>
 </html>
