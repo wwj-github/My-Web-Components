@@ -1,0 +1,11 @@
+远程协作组队 - 主页面
+
+团队现在是初期阶段，还未成型，各方面需要大家协商来确定；
+在团队讨论、发展过程中，将结果作为产出维护到文档中，以文档作为团队行事标准；
+本页面作为团队文档的入口，用来索引各个子页面文档；
+注：团队中任何人都有权利（和义务）修改、维护团队文档，包括当前这段文字。
+
+远程成员库 - https://docs.qq.com/sheet/DTkt4YldzRnN4b01m
+团队IM - Slack - https://join.slack.com/t/yugurenoarisu/shared_invite/zt-ipovd81t-6XqMMneuZlz~XfH543ddmw
+
+成员可用时间及接单可行性分析 - https://docs.qq.com/doc/DY1phVFpOaldZVUVs
